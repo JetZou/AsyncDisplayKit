@@ -1843,17 +1843,4 @@ static NSString * const kCellReuseIdentifier = @"_ASTableViewCell";
   }
 }
 
-- (void)checkListIsEmpty
-{
-  NSInteger count = 0;
-  for (NSInteger i=0; i<[self numberOfSectionsInTableView:self];i++)
-  {
-    count += [self dataController:self.dataController rowsInSection:i];
-    if (count>0)
-    {
-      break;
-    }
-  }
-  [self showEmpty:count == 0];
-}
 @end
