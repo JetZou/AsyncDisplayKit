@@ -14,7 +14,6 @@
 #import <AsyncDisplayKit/ASLayoutController.h>
 #import <AsyncDisplayKit/ASLayoutRangeType.h>
 #import <AsyncDisplayKit/ASTableViewProtocols.h>
-#import "HaloUITableView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @note ASTableNode is strongly recommended over ASTableView.  This class is provided for adoption convenience.
  */
-@interface ASTableView : HaloUITableView
+@interface ASTableView : UITableView
 
 /// The corresponding table node, or nil if one does not exist.
 @property (nonatomic, weak, readonly) ASTableNode *tableNode;
